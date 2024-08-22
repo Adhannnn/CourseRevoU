@@ -1,0 +1,50 @@
+.container {
+    border: 5px solid #ffcc5c;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(112, 103, 23);
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.container > div {
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    border: 2px solid;
+    background-color: green;
+}
+
+.first {
+    border: 1px solid black;
+    display: flex;
+    border: none;
+}
+
+.form {
+    border: 1px solid black;
+    width: 40%;
+    border: none;
+}
+
+.table-form {
+    border: 1px solid black;
+    border: none;
+    background-color: aquamarine;
+}
+
+.table-form-content {
+}
+
+.pesan {
+    vertical-align: top;
+}
+
+.table {
+    border: 1px solid black;
+    width: 50%;
+    border: none;
+}
+

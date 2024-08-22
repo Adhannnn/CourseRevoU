@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise three</title>
+    <style>
+        body {
+            background-color: forestgreen;
+        }
+
+        .container {
+            border: 5px solid #ffcc5c;
+            display: flex;
+            justify-content: flex-end;
+            background-color: rgb(112, 103, 23);
+        }
+
+        .logo {
+            margin-right: auto;
+        }
+
+        .container > div {
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+            color: #ffeead;
+            border: 2px solid;
+            background-color: green;
+        }
+
+        .container > div:hover {
+            background-color: blue;
+            transition: 0.5s ease-in-out;
+        }
+
+        .content {
+            flex-direction: row;
+            display: flex;
+        }
+
+        .form {
+            display: flex;
+            flex: 1;
+            align-content: center;
+            justify-content: center;
+        }
+
+        .table {
+            display: flex;
+            flex: 1;
+            align-content: center;
+            justify-content: center;
+        }
+
+        header > h1 {
+            text-align: center;
+        }
+
+        .table-form {
+            border: 1px solid black;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            background-color: lightblue;
+        }
+
+        .table-form td {
+            border: none;
+            text-align: left;
+        }
+
+        .table-form input[type="text"] {
+            width: 300px;
+        }
+
+        .table-form input[type="text"]::placeholder {
+            text-align: center;
+        }
+
+        .table-form input[type="date"] {
+            width: 300px;
+            text-align: center;
+        }
+
+        .pesan {
+            vertical-align: top;
+        }
+
+        .table-form input[type="submit"] {
+            background-color: blue;
+            color: white;
+        }
+
+        .table-form input[type="submit"]:hover {
+            background-color: white;
+            color: blue;
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+
+        .table-form input[type="submit"]:active {
+            background-color: blue;
+            color: white;
+        }
+
+        .table-form textarea {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .table-table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .table-table  th,td {
+            border: 0.5px solid black;
+            text-align: center;
+        }
+
+        .table-table th {
+            background-color: rgb(163, 161, 161);
+        }
+
+        .table-table td {
+            background-color: white;
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="container">
+        <img src="../img/IMG-20240709-WA0007.jpg" alt="" class="logo" width="40" height="40">
+        <div class="home">Home</div>
+        <div class="search">Search</div>
+        <div class="logout">Logout</div>
+    </nav>
+    <header>
+        <h1>Form and Table</h1>
+    </header>
+    <main class="content">
+        <div class="form">
+            <table class="table-form">
+                <tr>
+                    <td>Nama</td>
+                    <td>:</td>
+                    <td><input type="text" width="" placeholder="Nama Anda"></td>
+                </tr>
+                <tr> 
+                    <td>Tanggal Lahir</td>
+                    <td>:</td>
+                    <td><input type="date" name="" id="" ></td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>:</td>
+                    <td>
+                        <input type="radio" name="gender" id="">
+                        <label for="">Laki - laki</label>
+                        <input type="radio" name="gender" id="">
+                        <label for="">Perempuan</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pesan">Pesan</td>
+                    <td class="pesan">:</td>
+                    <td>
+                        <textarea name="" id="" rows="5" cols="43"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="text-align: center;">
+                        <input type="submit" value="Kirim" style="width: 100%;">
+                    </td>
+                </tr>
+            </table> 
+        </div>
+        <div class="table">
+            <table class="table-table">
+                <tr>
+                    <th>Nama</th>
+                    <th>Tanggal Lahir</th>
+                    <th>Jenis Kelamin</th>
+                    <th>Pesan</th>
+                    <th>Profile</th>
+                    <th>Delete</th>
+                </tr>
+                <tr>
+                    <td>Wahyu Ramadhan</td>
+                    <td>27 Oktober 2005</td>
+                    <td>Laki - Laki</td>
+                    <td>Adhan sayang Naurah</td>
+                    <td class="link"><a href="">Klik Disini</a></td>
+                    <td>Hapus</td>
+                </tr>
+                <tr>
+                    <td>Naurah Ramadhan</td>
+                    <td>13 Februari 2005</td>
+                    <td>Perempuan</td>
+                    <td>Naurah sayang Adhan</td>
+                    <td class="link"><a href="">Klik Disini</a></td>
+                    <td>Hapus</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+</body>
+</html>
